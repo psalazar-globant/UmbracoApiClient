@@ -48,3 +48,8 @@ packages/
 
 # HTTP request files
 *.http
+
+!Umbraco/umbraco/Data/*
+!Umbraco/umbraco-package-schema.json
+!Umbraco/appsettings-schema.json
+!Umbraco/appsettings-schema.Umbraco.Cms.json
