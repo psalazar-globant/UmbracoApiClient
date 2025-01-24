@@ -18,7 +18,6 @@ builder.Services.Configure<UmbracoBridgeSettings>(builder.Configuration.GetSecti
 
 builder.Services.AddSingleton<IAuthService, AuthService>();
 
-// Configurar Swagger (OpenAPI)
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "UmbracoBridge Api", Version = "v1" });
