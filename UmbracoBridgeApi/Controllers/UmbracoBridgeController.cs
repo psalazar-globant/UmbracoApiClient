@@ -27,7 +27,6 @@ public class UmbracoBridgeController : ControllerBase
     [HttpPost("DocumentType")]
     public async Task<IActionResult> CreateDocumentType([FromBody] DocumentTypeRequestDto request)
     {
-
         var result = await _documentService.CreateDocumentTypeAsync(request);
 
         return result.Match(data => Ok(data), error => throw error!);

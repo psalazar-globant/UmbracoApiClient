@@ -3,6 +3,5 @@
 public class CreateDocumentTypeResponseDto
 {
     public string? ResourceIdentifier { get; set; }
-
     public string? Location { get; set; }
 }
