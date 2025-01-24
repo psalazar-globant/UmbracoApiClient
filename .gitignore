@@ -1,0 +1,50 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.sln.docstates
+*.tlog
+*.ide
+*.pdb
+*.log
+*.vspscc
+*.vssscc
+*.dbmdl
+*.dbproj.schemaview
+*.dbproj
+*.jfm
+*.pfx
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+packages/
+*.nuspec
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+[Ll]ogs/
+*.dll
+*.exe
+*.app
+*.config
+*.cache
+*.db
+*.db-journal
+
+# Rider
+.idea/
+*.sln.iml
+
+# User-specific files
+*.rsuser
+*.userprefs
+
+# User-specific files
+*.csproj.user
+
+# HTTP request files
+*.http
