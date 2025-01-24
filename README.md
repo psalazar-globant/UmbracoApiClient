@@ -73,20 +73,22 @@ Make sure you have [.NET 9.0](https://dotnet.microsoft.com/download) installed o
       }
 2. **POST /api/UmbracoBridge/DocumentType**
 
-      Call this endpoint with the following message:
+      Call this endpoint with the message below. Make sure the Alias is not repeated.
 
       ```json
         {
-            "total": 6,
-            "items": [
-               {"name": "Configuration"},
-               {"name": "Data Integrity"},
-               {"name": "Live Environment"},
-               {"name": "Permissions"},
-               {"name": "Security"},
-               {"name": "Services"}
-           ]
-        }
+          "alias": "string",
+          "name": "string",
+          "description": "string",
+          "icon": "string",
+          "allowedAsRoot": true,
+          "variesByCulture": true,
+          "variesBySegment": true,
+          "collection": {
+             "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6"
+          },
+          "isElement": true
+         }
       ```
    It should return `200` status code with the following body:
       ```json
@@ -94,7 +96,6 @@ Make sure you have [.NET 9.0](https://dotnet.microsoft.com/download) installed o
         "resourceIdentifier": "4584f8b6-fa2f-43d9-ad1b-5dee4f6d642c",
         "location": "https://localhost:44303/umbraco/management/api/v1/document-type/4584f8b6-fa2f-43d9-ad1b-5dee4f6d642c"
    }
-
 3. **DELETE /api/UmbracoBridge/DocumentType/{id}**
 
       Call this endpoint with id obtained in the previous call
